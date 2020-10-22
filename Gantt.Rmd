@@ -7,27 +7,39 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
+1. Importing all necessary libraries 
+
 ```{r}
 library(magrittr)
 library(ggplot2)
 here::here()
 ```
-
+2. Reading data
 ```{r}
 tasks <- read.csv("tasks.csv", header = T) %>% 
   tibble::as_tibble()
 
 spots <- read.csv("spots.csv", header = T) %>% 
   tibble::as_tibble()
+```
 
+3. Customizing the chart visuals 
+```{r}  
 gantt <- ganttrify::ganttrify(project = tasks,
                               spots = spots,
+          <!-- input start date -->
           project_start_date = "2021-01",
           size_text_relative = 2, 
+          <!-- if TRUE shows month numbers on top -->
           month_number = FALSE,
+          <!-- if TRUE shows bold lines delimiting quarters -->
           mark_quarters = TRUE,) +
+          <!-- this just changes the angle of the x axis labels -->
   theme(axis.text.x = element_text(angle = 90, size = 14))
+```
 
+4. Exporting the chart to a .png and specifying aspect ratio, background colour, etc
+```{r}
 png(filename = "plot.png", width = 1200, height = 900, units = "px", pointsize = 12, res = 72, bg = "white")
 gantt
 dev.off()
