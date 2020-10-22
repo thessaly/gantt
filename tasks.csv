@@ -1,19 +1,15 @@
 wp,activity,start_date,end_date
 1.Analysis,1.1 Finish coding,1,1
 1.Analysis,1.2 Set structure of analysis,1,1
-2. Missing data,2.1 Detect missing data,2,2
-2. Missing data,2.2 Protocols for missing data collection,2,2
-2. Missing data,2.3 Waiting for missing data,3,10
-2. Missing data,2.4 Incorporate missing data,10,11
 3. Writing,"3.1 Writing description chapters (6, 7)",3,6
 3. Writing,3.2 Writing cross analysis chapter (8),6,8
-3. Writing,3.4 Review Introduction,8,9
+3. Writing,3.4 Intermittent example,8,9
+3. Writing,3.4 Intermittent example,12,13
+3. Writing,3.4 Intermittent example,15,16
+3. Writing,3.4 Intermittent example,19,20
 3. Writing,3.5 Review State of the Art,9,10
 3. Writing,3.6 Review Theoretical framework,10,11
 3. Writing,3.7 Write methods,11,13
 3. Writing,3.8 Review global results,13,14
-3. Writing,3.9 Review Academic results,14,15
-3. Writing,3.10 Review Community results,15,16
-3. Writing,3.11 Review cross case results,16,17
-3. Writing,3.12 Write conclusions,17,19
+3. Writing,3.9 Write conclusions,17,19
 4. Review,4.1 Review everything,19,21
