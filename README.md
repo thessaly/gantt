@@ -1,4 +1,4 @@
-[En español](README_es.md)
+:speaking_head: [En español](README_es.md)
 
 # Simple monthly Gantt
 
