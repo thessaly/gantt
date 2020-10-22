@@ -1,10 +1,14 @@
+[En español](README_es.md)
+
 # Simple monthly Gantt
 
 A simple R snippet for getting a monthly gantt chart from simple tasks and milestones in csv format, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
 
 ## Output
 
-See walkthrough [here](https://thessaly.github.io/gantt), but take in consideration this is not an interactive notebook, it's just the html output. You can find `Gantt.Rmd` in the docs folder, download it and open it in RStudio for an interactive version.
+See walkthrough [here](https://thessaly.github.io/gantt), but take in consideration this is not an interactive notebook, it's just the html output. 
+
+You can find `Gantt.Rmd` in the docs folder, download it and open it in RStudio for an interactive version.
 
 ![](docs/plot.png)
 
