@@ -1,6 +1,6 @@
 # Gantt
 
-A simple R snippet for getting a gantt chart (monthly) from tasks and milestones in csv files, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
+A simple R snippet for getting a monthly gantt chart from simple tasks and milestones in csv format, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
 
 ## Output
 
@@ -8,7 +8,7 @@ See walkthrough [here](https://thessaly.github.io/gantt), but take in considerat
 
 ![](docs/plot.png)
 
-## Data input
+## Input format
 
 Input is divided in two csv files: `tasks.csv` and `spots.csv`
 
@@ -22,9 +22,9 @@ wp,activity,start_date,end_date
 2. Missing data,2.2 Protocols for missing data collection,2,2
 ```
 
-- wp is the main block that comprises different tasks, its length is calculated by adding the duration of inner tasks, should have a number
-- activity should have a numbered 1.1, 1.2 etc scheme, you can number many activities with the same prefix if you want one activity to be performed in one line but with interruptions 
-- start_date and end_date are integers representing months.
+- `wp` is the main block that comprises different tasks, its length is calculated by adding the duration of inner tasks, should have a number
+- `activity` should have a numbered 1.1, 1.2 etc scheme, you can number many activities with the same prefix if you want one activity to be performed in one line but with interruptions 
+- `start_date` and `end_date` are integers representing months, you have to input the actual project start date in the code
 
 ### Milestones
 
@@ -36,9 +36,9 @@ activity,spot_type,spot_date
 3.7 Write methods,D4,13
 ```
 
-- activity has to be a copy of the text you have in an activity in `tasks.csv` where you want the milestone to be
-- spot_type has the text that will go in the milestone label
-- spot_date is an integer indicating the month where the label will go
+- `activity` indicates where your milestone will be applied, has to be equal to the text of any `activity` you have in `tasks.csv`
+- `spot_type` has the text that will go in the milestone label
+- `spot_date` is an integer indicating the month where the label will appear
 
 
 
