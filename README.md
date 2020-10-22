@@ -3,6 +3,9 @@
 A simple R snippet for getting a gantt chart (monthly) from tasks and milestones in csv files, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
 
 ## Output
+
+See walkthrough [here](https://thessaly.github.io/gantt)
+
 ![](plot.png)
 
 ## Data input
