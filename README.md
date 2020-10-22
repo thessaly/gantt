@@ -2,7 +2,7 @@
 
 # Simple monthly Gantt
 
-A simple R snippet for getting a monthly gantt chart from simple tasks and milestones in csv format, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
+A simple R snippet for getting a monthly gantt chart from tasks and milestones in csv format, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
 
 ## Output
 
