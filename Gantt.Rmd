@@ -1,0 +1,34 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(magrittr)
+library(ggplot2)
+here::here()
+```
+
+```{r}
+tasks <- read.csv("tasks.csv", header = T) %>% 
+  tibble::as_tibble()
+
+spots <- read.csv("spots.csv", header = T) %>% 
+  tibble::as_tibble()
+
+gantt <- ganttrify::ganttrify(project = tasks,
+                              spots = spots,
+          project_start_date = "2021-01",
+          size_text_relative = 2, 
+          month_number = FALSE,
+          mark_quarters = TRUE,) +
+  theme(axis.text.x = element_text(angle = 90, size = 14))
+
+png(filename = "plot.png", width = 1200, height = 900, units = "px", pointsize = 12, res = 72, bg = "white")
+gantt
+dev.off()
+```
