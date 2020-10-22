@@ -1,6 +1,6 @@
 # Gantt
 
-A simple R snippet for getting a gantt chart with tasks and milestones in csv files, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
+A simple R snippet for getting a gantt chart (monthly) from tasks and milestones in csv files, using the wonderful [Ganttrify](https://github.com/giocomai/ganttrify) package developed by [Giorgio Comai](https://github.com/giocomai).
 
 ## Output
 ![](plot.png)
