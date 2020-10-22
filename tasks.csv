@@ -1,6 +1,7 @@
 wp,activity,start_date,end_date
-1.Analysis,1.1 Finish coding,1,1
-1.Analysis,1.2 Set structure of analysis,1,1
+1. Analysis,1.1 Coding material,1,1
+1. Analysis,1.2 Perform analysis,1,1
+2. Whatever task,2.1 Example task, 2,2
 3. Writing,"3.1 Writing description chapters (6, 7)",3,6
 3. Writing,3.2 Writing cross analysis chapter (8),6,8
 3. Writing,3.4 Intermittent example,8,9

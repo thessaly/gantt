@@ -42,10 +42,11 @@ gantt
 
 Changing aspect ratio, background colour, etc.
 
-See [`plot.png`](plot.png) for result 
-
 ```{r}
 png(filename = "plot.png", width = 1200, height = 900, units = "px", pointsize = 12, res = 72, bg = "white")
 gantt
 dev.off()
 ```
+### 5. Voilà
+
+![`plot.png`](plot.png)
