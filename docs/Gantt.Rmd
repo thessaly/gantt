@@ -15,10 +15,10 @@ here::here()
 ```
 ### 2. Reading data
 ```{r}
-tasks <- read.csv("tasks.csv", header = T) %>% 
+tasks <- read.csv("../tasks.csv", header = T) %>% 
   tibble::as_tibble()
 
-spots <- read.csv("spots.csv", header = T) %>% 
+spots <- read.csv("../spots.csv", header = T) %>% 
   tibble::as_tibble()
 ```
 
