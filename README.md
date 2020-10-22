@@ -4,9 +4,9 @@ A simple R snippet for getting a gantt chart (monthly) from tasks and milestones
 
 ## Output
 
-See walkthrough [here](https://thessaly.github.io/gantt)
+See walkthrough [here](https://thessaly.github.io/gantt), but take in consideration this is not an interactive notebook, it's just the html output. You can download and open `Gantt.Rmd` in RStudio for an interactive version.
 
-![](plot.png)
+![](docs/plot.png)
 
 ## Data input
 
